@@ -1,214 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Patua+One|Titillium+Web" rel="stylesheet">
-	<style>
-		body {
-			background-color: #f0f0f0;
-			margin: 0;
-			margin-bottom: 5mm;
-		}
-
-		.header {
-			box-shadow: 0 0 2mm black;
-			margin: 0;
-			padding: 5mm;
-			padding-bottom: 15mm;
-			padding-top: 15mm;
-			background-color: #f0e0ff;
-			background-image: url('./website_files/outlinesLightened.png');
-			background-repeat: no-repeat;
-			background-size: cover;
-			image-rendering: pixelated;
-		}
-
-		@media screen and (min-width: 30cm) {
-			.projects {
-				margin: auto;
-				width: 85%;
-			}
-
-			.headerInterior {
-				width: 70%;
-				margin-left: 30%;
-			}
-		}
-
-		.section {
-			background-color: white;
-			margin: 5mm;
-			padding: 5mm;
-			box-shadow: 0 0 1mm black;
-			min-height: 40mm;
-		}
-
-		.face {
-			width: 20mm;
-			height: 20mm;
-			border-radius: 16mm;
-			float: left;
-			margin-right: 5mm;
-			box-shadow: 0 0 1mm black;
-			object-fit: cover;
-		}
-
-		.sideImage {
-			width: 40mm;
-			height: 40mm;
-			float: left;
-			margin-right: 5mm;
-			box-shadow: 0 0 1mm black;
-			object-fit: cover;
-		}
-
-		p {
-			font-family: 'Titillium Web', sans-serif;
-			margin: 0mm;
-			word-wrap: break-word;
-		}
-
-		.sectionHeader {
-			font-size: 2em;
-			font-family: 'Patua One', sans-serif;
-			margin-bottom: 2mm;
-			margin-top: -2mm;
-		}
-	</style>
+     <title>Charles Oliner</title>
+     <link rel="stylesheet" href="index.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	<div class="header">
-		<div class="headerInterior">
-			<img class="face" src="./website_files/face.png">
-			<p class="sectionHeader" style="margin-bottom: 0;font-size: 3em;">Charles Oliner</p>
-			<p><a href="mailto:olinercharles@gmail.com">olinercharles@gmail.com</a> | (805) 490-2951 |
-				<a href="resume.docx">Resume</a> | <a href="https://www.linkedin.com/in/charlesoliner/">Linkedin</a> |
-				<a href="https://github.com/ThunderousEcho">GitHub</a></p>
-		</div>
-	</div>
-	<div class="projects">
-		<div class="section">
-			<img class="sideImage" src="./website_files/rollItRight.png">
-			<a href="https://thunderous-echo.itch.io/roll-it-right">
-				<p class="sectionHeader">Roll it Right</p>
-			</a>
-			<p>Basically a 1x1 Rubix Cube simulator. Submission to GMTK Jam 2022.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/smashThePlanets.png">
-			<a href="https://thunderous-echo.itch.io/smash-the-planets">
-				<p class="sectionHeader">Smash The Planets</p>
-			</a>
-			<p>Submission to GMTK Jam 2021.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/rhythmGameWithOnlyOneLane.png">
-			<a href="https://thunderous-echo.itch.io/rhythm-game-with-only-one-lane">
-				<p class="sectionHeader">Rhythm Game with Only One Lane</p>
-			</a>
-			<p>A rhythm game where you jump on the notes. Submission to GMTK Jam 2019.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/telesto.png">
-			<a href="https://gamejolt.com/games/telesto/287659">
-				<p class="sectionHeader">Telesto</p>
-			</a>
-			<p>A 'thinky' platformer in Unity3D/C#/ShaderLab. The asymmetric nature of this game's control scheme
-				allowed designs where a level could be completely recontextualized by going from top to bottom instead
-				of bottom to top. This project taught me a lot about how to store level data in games.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/rectanglesCountAsArt.png">
-			<a href="https://gamejolt.com/games/rectangles-count-as-art/121479">
-				<p class="sectionHeader">Rectangles Count as Art</p>
-			</a>
-			<p>A Unity3D/C# arcade game about rocket jumping. It used a lot of my skills in difficulty curves and 2D
-				physics.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/classic.png">
-			<p class="sectionHeader">Key Rebinding Menu</p>
-			<p>This Unity3D key rebinding menu was inspired by the Windows Classic Theme, and was part of a
-				general-purpose menu system I was working on.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/dandelion.png">
-			<p class="sectionHeader">Animated Dandelion Logo</p>
-			<p>A procedurally animated dandelion logo, commissioned by Mahamaya Technologies. Made in Unity3D/C#. It
-				allowed me to practice my expertise in procedural animation.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/beaming.png" title="slorp">
-			<p class="sectionHeader">UFO Beaming Up Shader</p>
-			<p>A UFO "beaming up" shader that distorted anthing in or behind the beam (on the GPU). Forced me to learn
-				how grabpasses work.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/commandConsole.png">
-			<p class="sectionHeader">Command Terminal with Reflection</p>
-			<p>A terminal for Unity3D that used .NET reflection to compile and run C# and UnityScript code at runtime.
-				Was briefly on the Unity3D asset store. It forced me to learn about reflection.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/outlines.png">
-			<a href="https://www.assetstore.unity3d.com/en/#!/content/98020">
-				<p class="sectionHeader">Edge Detection Toolkit</p>
-			</a>
-			<p>A toolkit providing three different methods to put outlines on objects. This utilized my knowledge of GPU
-				shaders and 3D math. It's still available on the Unity3D asset store.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/missionProfileNotation.PNG">
-			<a href="https://www.kerbaltek.com/missions">
-				<p class="sectionHeader">Mission Profile Notation</p>
-			</a>
-			<p>Pretty much a flowchart editor in JavaScript, HTML, and CSS.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/voxelEditor.png">
-			<p class="sectionHeader">Voxel Editor</p>
-			<p>Voxel editor in Unity3D/C#. Featured a selection tool that could be used to extrude, cut holes, copy,
-				paste, and delete regions. This project forced me to learn how structs and custom operators work.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/proceduralGeneration.png">
-			<p class="sectionHeader">A Bunch of Procedurally Generated Stuff</p>
-			<p>Made in Unity3D/C#. The dragon's appearance, city, and terrain are all procedurally generated. The dragon
-				was player-controlled and had flapping animations. It allowed me to practice my procedural generation,
-				3D math, and game physics skills.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/ropeWrapping.png">
-			<p class="sectionHeader">Rope Wrapping</p>
-			<p>A rope wrapping system for moving objects Unity3D/C#. This required me to come up with and think about a
-				bunch of algorithms that I would not have otherwise.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/carhopDestiny.png">
-			<a href="https://gamejolt.com/games/carhop-destiny/63686">
-				<p class="sectionHeader">Carhop Destiny</p>
-			</a>
-			<p>A food delivery arcade game achieved with Unity3D/C#. It taught me a lot about pathfindinding, difficulty
-				curves, and code structure.</p>
-		</div>
-		<div class="section">
-			<img class="sideImage" src="./website_files/terrain.png">
-			<p class="sectionHeader">Procedurally Generated Terrain</p>
-			<p>Procedurally generated terrain wrapped around a cyllinder in Unity3D/C#. This one has biomes, and the
-				method I used to create the biomes required me to find the inverses of a bunch of functions.</p>
-		</div>
-		<div class="section" style="margin:15mm;margin-bottom:5mm;min-height:0">
-			<p class="sectionHeader" style="text-align:center">Awards/Certifications</p>
-			<p>Toptal Core Specialization</p>
-			<p><i>Member</i>, National Science Honor Society</p>
-			<p><i>Member</i>, National Math Honor Society</p>
-			<p><i>Commended Student</i>, National Merit Scholarship</p>
-		</div>
-	</div>
-	<p style="text-align:center;color:gray;font-size:0.75em">I made this website from scratch with HTML. It was fun.</p>
-
+    <div class="card header">
+        <div class="section header">
+            <div class="text-block">
+                Hi, I'm
+                <h1>Charles Oliner</h1>
+                <p class="title">a full-stack developer</p>
+                <p class="links">
+                    <a class="link" href="resume.docx">Resume</a>
+                    <span class="white-space-pre"> </span>
+                    <a class="link" href="https://github.com/CharlesOliner">GitHub</a>
+                </p>
+            </div>
+            <div class="image circle" style="background-image: url('images/Charles Oliner.png')"></div>
+        </div>
+    </div>
+    <div class="card">
+        <h1>My most notable work</h1>
+        <a href="https://www.cisa.gov/resources-tools/services/protective-domain-name-system-dns-resolver">
+            <div class="section">
+                <div class="image" style="background-image: url('images/Protective DNS.png')"></div>
+                <div class="text-block">
+                    <h2>Protective DNS</h2>
+                    <p>At Accenture Federal Services, I worked on the Protective Domain Name System, which protects the Department of Homeland Security and other agencies by preventing network traffic from reaching malicious destinations.</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://whiteflintcreations.com/">
+            <div class="section">
+                <div class="image" style="background-image: url('images/White Flint Creations.png')"></div>
+                <div class="text-block">
+                    <h2>White Flint Creations website</h2>
+                    <p>I developed the official website for a local woodshop.</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://the-ari.com/">
+            <div class="section">
+                <div class="image" style="background-image: url('images/Analytics Research Institute.png')"></div>
+                <div class="text-block">
+                    <h2>Analytics Reasearch Institute website</h2>
+                    <p>I developed the official website for the ARI.</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://pekoedc.com/">
+            <div class="section">
+                <div class="image" style="background-image: url('images/Pekoe DC.png')"></div>
+                <div class="text-block">
+                    <h2>Pekoe DC website</h2>
+                    <p>I developed the official website for an accupuncture clinic. Unfortunately, the clinic has since closed their doors, but the site is still in use by Dr. Mires.</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://torrents.band/">
+            <div class="section">
+                <div class="image" style="background-image: url('images/Torrents.png')"></div>
+                <div class="text-block">
+                    <h2>Torrents website</h2>
+                    <p>I developed the official website for a post-hardcore punk rock band.</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.johnsonsflorists.com">
+            <div class="section">
+                <div class="image" style="background-image: url('images/JFGC.png')"></div>
+                <div class="text-block">
+                    <h2>Johnson's Florist and Garden Centers store website</h2>
+                    <p>I help to maintain the official website for a chain of flower shops.</p>
+                </div>
+            </div>
+        </a>
+    </div>
 </body>
 
 </html>

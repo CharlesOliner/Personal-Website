@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Mustica Pro';
+    src: url("fonts/MusticaPro-SemiBold.otf") format("opentype")
+}
+
+body {
+    text-align: center;
+    font-family: 'Mustica Pro';
+    font-weight: 100;
+    background-color: #f75000;
+    color: #303030;
+    padding: 25px 50px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 0;
+}
+
+.card {
+    background-color: #fffef8;
+    box-shadow: 0 2.5px 5px #00000040;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.section {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.section.header {
+    flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 700px) {
+
+    body {
+        text-align: left;
+        padding: 50px 100px 50px 100px;
+        gap: 75px;
+    }
+
+    .card {
+        padding: 50px 100px 50px 100px;
+    }
+
+    .section {
+        gap: 50px;
+        flex-direction: row;
+    }
+
+    .section.header {
+        flex-direction: row;
+    }
+
+    .section:not(.header) {
+        align-items: start;
+    }
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    font-size: 32px;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+a {
+    color: #303030;
+    text-decoration: none;
+}
+
+.link {
+    color: #f75000;
+
+}
+
+.link:visited {
+    color: #b23800;
+}
+
+.links {
+    margin-bottom: 0;
+}
+
+.white-space-pre {
+    white-space: pre;
+}
+
+.image {
+    object-fit: cover;
+    aspect-ratio: 1;
+    width: calc(min(250px, 100%));
+    flex-shrink: 0;
+    flex-grow: 0;
+    box-shadow: 0 2.5px 5px #00000030 inset;
+    background-size: cover;
+    background-position: center;
+}
+
+.circle {
+    border-radius: 999999px;
+    width: calc(min(300px, 100%));
+}
+
+.text-block {
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 720px) {
+
+    .card {
+        margin: auto;
+        width: 720px;
+    }
+}
