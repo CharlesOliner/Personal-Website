@@ -2,85 +2,51 @@
 <html lang="en">
 
 <head>
-     <title>Charles Oliner</title>
-     <link rel="stylesheet" href="index.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Charles Oliner</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <div class="card header">
-        <div class="section header">
-            <div class="text-block">
-                Hi, I'm
-                <h1>Charles Oliner</h1>
-                <p class="title">a full-stack developer</p>
-                <p class="links">
-                    <a class="link" href="mailto:olinercharles@gmail.com">olinercharles@gmail.com</a>
-                    <span class="white-space-pre"> </span>
-                    <a class="link" href="resume.docx">Resume</a>
-                    <span class="white-space-pre"> </span>
-                    <a class="link" href="https://github.com/CharlesOliner">GitHub</a>
-                </p>
-            </div>
-            <div class="image circle" style="background-image: url('images/Charles Oliner.png')"></div>
+    <div class="card flex-column-reverse-or-row home-card">
+        <div class="home-text">
+            <h3>Hi,</h3>
+            <h1>I'm <span class="color-orange">Charles</span></h1>
+            <h2>a full-stack developer</h2>
+            <p class="links">
+                <a class="link" href="mailto:olinercharles@gmail.com">olinercharles@gmail.com</a>
+                <span class="white-space-pre"> </span>
+                <a class="link" href="resume.docx">Resume</a>
+                <span class="white-space-pre"> </span>
+                <a class="link" href="https://github.com/CharlesOliner">GitHub</a>
+            </p>
         </div>
+        <div class="image face circle" style="background-image: url('images/Charles Oliner.png')"></div>
     </div>
-    <div class="card">
-        <h1>Some of my work</h1>
-        <a href="https://www.cisa.gov/resources-tools/services/protective-domain-name-system-dns-resolver">
-            <div class="section">
-                <div class="image" style="background-image: url('images/Protective DNS.png')"></div>
-                <div class="text-block">
-                    <h2>Protective DNS</h2>
-                    <p>At Accenture Federal Services, I worked on the Protective Domain Name System, which protects the Department of Homeland Security and other agencies by preventing network traffic from reaching malicious destinations.</p>
-                </div>
-            </div>
-        </a>
-        <a href="https://whiteflintcreations.com/">
-            <div class="section">
-                <div class="image" style="background-image: url('images/White Flint Creations.png')"></div>
-                <div class="text-block">
-                    <h2>White Flint Creations website</h2>
-                    <p>I developed the official website for a local woodshop.</p>
-                </div>
-            </div>
-        </a>
-        <a href="https://the-ari.com/">
-            <div class="section">
-                <div class="image" style="background-image: url('images/Analytics Research Institute.png')"></div>
-                <div class="text-block">
-                    <h2>Analytics Reasearch Institute website</h2>
-                    <p>I developed the official website for the ARI.</p>
-                </div>
-            </div>
-        </a>
-        <a href="https://pekoedc.net/">
-            <div class="section">
-                <div class="image" style="background-image: url('images/Pekoe DC.png')"></div>
-                <div class="text-block">
-                    <h2>Pekoe DC website</h2>
-                    <p>I developed the official website for an accupuncture clinic. Unfortunately, the clinic has since closed their doors, but the site is still in use by Dr. Mires.</p>
-                </div>
-            </div>
-        </a>
-        <a href="https://torrents.band/">
-            <div class="section">
-                <div class="image" style="background-image: url('images/Torrents.png')"></div>
-                <div class="text-block">
-                    <h2>Torrents website</h2>
-                    <p>I developed the official website for a post-hardcore punk rock band.</p>
-                </div>
-            </div>
-        </a>
-        <a href="https://www.johnsonsflorists.com">
-            <div class="section">
-                <div class="image" style="background-image: url('images/JFGC.png')"></div>
-                <div class="text-block">
-                    <h2>Johnson's Florist and Garden Centers store website</h2>
-                    <p>I help to maintain the official website for a chain of flower shops.</p>
-                </div>
-            </div>
-        </a>
+    <div class="card showcase-card">
+        <h2>Some of my work</h2>
+        <div class="showcase flex-column-or-row">
+            <a class="showcase-link" href="https://www.cisa.gov/resources-tools/services/protective-domain-name-system-dns-resolver">
+                <div class="image showcase-image" style="background-image: url('images/Protective DNS.png')"></div>
+            </a>
+            <a class="showcase-link" href="https://whiteflintcreations.com/">
+                <div class="image showcase-image" style="background-image: url('images/White Flint Creations.png')"></div>
+            </a>
+            <a class="showcase-link" href="https://the-ari.com/">
+                <div class="image showcase-image" style="background-image: url('images/Analytics Research Institute.png')"></div>
+            </a>
+        </div>
+        <div class="showcase flex-column-or-row">
+            <a class="showcase-link" href="https://pekoedc.net/">
+                <div class="image showcase-image" style="background-image: url('images/Pekoe DC.png')"></div>
+            </a>
+            <a class="showcase-link" href="https://torrents.band/">
+                <div class="image showcase-image" style="background-image: url('images/Torrents.png')"></div>
+            </a>
+            <a class="showcase-link" href="https://www.johnsonsflorists.com">
+                <div class="image showcase-image" style="background-image: url('images/JFGC.png')"></div>
+            </a>
+        </div>
     </div>
 </body>
 
